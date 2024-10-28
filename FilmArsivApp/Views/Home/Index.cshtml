@@ -1,0 +1,85 @@
+﻿@{
+    ViewBag.Title = "Film Listesi";
+}
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .movie-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .movie-item {
+            width: 300px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            background-color: #f9f9f9;
+            transition: transform 0.3s;
+        }
+
+        .movie-item:hover {
+            transform: scale(1.05);
+        }
+
+        .movie-poster img {
+            width: 100%;
+            height: auto;
+        }
+
+        .movie-info {
+            padding: 15px;
+        }
+
+        .movie-info h3 {
+            margin: 0 0 10px;
+        }
+
+        .movie-info p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Popüler Filmler Listesi</h2>
+        <div class="movie-list">
+            <div class="movie-item">
+                <div class="movie-poster">
+                    <img src="https://via.placeholder.com/150" alt="Film Posteri">
+                </div>
+                <div class="movie-info">
+                    <h3>Film Adı 1</h3>
+                    <p><strong>Yönetmen:</strong> Yönetmen Adı 1</p>
+                    <p><strong>Yıl:</strong> 2023</p>
+                    <p><strong>Tür:</strong> Aksiyon, Macera</p>
+                </div>
+            </div>
+            <div class="movie-item">
+                <div class="movie-poster">
+                    <img src="https://via.placeholder.com/150" alt="Film Posteri">
+                </div>
+                <div class="movie-info">
+                    <h3>Film Adı 2</h3>
+                    <p><strong>Yönetmen:</strong> Yönetmen Adı 2</p>
+                    <p><strong>Yıl:</strong> 2022</p>
+                    <p><strong>Tür:</strong> Dram, Romantik</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
